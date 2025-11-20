@@ -1,1 +1,3 @@
 # Swati_react_testing
+I split tests into utilities and component tests. For utilities, I covered all functions and edge cases, including discount thresholds (49.99, 50, 100), tax calculations, rounding in calculateTotal, and validation with isValidQuantity. I used toBeCloseTo for floating-point values and kept inputs small and clear so intent is obvious.
+For the React component, I used Testing Library with real user flows: adding an item, preventing bad input, updating quantity, removing items, and clearing the cart. I asserted on accessible text and totals (Subtotal, Discount, Tax, Total) so tests validate behavior, not implementation details. I also avoided flaky typing by setting controlled inputs reliably. This gave me stable tests and >80% coverage.
